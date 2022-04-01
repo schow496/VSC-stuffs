@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+
+    background-color: #ffeed4;
+}
+
+a {
+    /* text-decoration: none; */
+    /* color: #264653; */
+    color: inherit;
+}
+
+a:link {
+    color: #000;
+  }
+
+a:hover {
+    color: #FF0006;
+  }
+
+p {
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Fredoka', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    
+
+    /*fix text to left side*/
+}
+
+.Museum_name a {
+    color: #e76f51;
+}
+
+.headers {
+    /* font-family: 'limelight', cursive; */
+   /*font-family: 'Shizuru', cursive;*/
+    /*font-family: hegante, sans-serif;
+    font-style: normal;
+    font-weight: 900;*/
+    /* font-family: 'Belleza', sans-serif; */
+    font-family: 'Fredoka', sans-serif;
+    margin-left: 73px;
+}
+
+.title {
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Fredoka', sans-serif;
+    nav-right: auto;
+}
+
+
+.flex_container { 
+    display: flex;
+    justify-content: center;
+}
+
+.Museum_name {
+    align-self: center;
+    /* align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start; */
+    color: #ffeed4;
+}
+.sub_heading {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
+    align-self: flex-end;
+    /* align-content: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end; */
+    color: #e76f51;
+    margin-right: 20px;
+}
+
+.label {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.label p {
+    /* width: 66%; */
+    align-items: center;
+    width: 70%;
+    display: inline-block;
+
+}
+
+img {
+    max-width: 66%;
+    height: auto;
+}
+
+.arrow {
+
+    /* arrows on the side of the image */
+  
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.arrow::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    transform-origin: 50% 50%;
+  }
+
+  .arrow.left::before { 
+    transform: rotate(-135deg);
+    margin: -15px 0 0 -10px;
+  }
+  .arrow.right::before { 
+    transform: rotate(45deg); 
+    margin: -15px 0 0 -20px;
+  }
+  
+  .arrow::after {
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #000;
+    position: absolute;
+    transform-origin: 50% 50%;
+  }
+  
+  .arrow.left::after { 
+    width: 40px;
+    height: 0;
+    border-width: 2px 0 0 0;
+    transform: translate(-14px, -1px);
+  }
+  
+  .arrow.right::after { 
+    width: 40px;
+    height: 0;
+    border-width: 2px 0 0 0;
+    transform: translate(-26px, -1px);
+  }
+  
+  .arrow.circle {
+    background: #e76f51;
+    border-radius: 50px;
+  }
+  .flex_container a {
+      text-align: center;
+  }
+
+Footer { 
+    margin-top: 40px;
+}
