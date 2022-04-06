@@ -10,153 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Belleza&family=Fredoka&family=Limelight&family=Nunito+Sans:wght@300&family=Roboto:wght@100&family=Shizuru&display=swap" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style_labels.css">
 
+    <link rel="icon" type="image/x-icon" href="images/mush_icon.ico">
 
-<style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: #ffeed4;
-        }
-    
-        a {
-            text-decoration: none;
-            /* color: #264653; */
-            color: inherit;
-        }
+    <!-- catalogit info -->
+    <script src="ci-labeler.js"></script>
 
-        a:link {
-    color: #000;
-  }
-
-a:hover {
-    color: #FF0006;
-  }
-    
-        .sidebar {
-            display: block;
-            position: fixed;
-            right: 0;
-            height: auto;
-            width: 25%;
-            margin-right: 33px;
-            margin-top: 33px;
-            text-align: right;
-        }
-        .sidebar-item {
-            list-style-type: none;
-            margin-top: 5px;
-            font-size: 37px;
-            font-family: 'Fredoka', sans-serif;
-        }
-
-        #logo {
-        /* width: auto; */
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        max-width: 300px;
-        
-         }
-
-        img {
-        max-width: 50%;
-        height: auto;
-        margin-left: 33px;
-        }
-
-        h1 {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 28pt;
-            margin-left: 165px;
-        }
-
-        p {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 20pt;
-            margin-left: 165px;
-            margin-right: 550px;
-        }
-        .arrow {
-
-/* arrows on the side of the image */
-
-width: 75px;
-height: 75px;
-margin: 20px;
-margin-bottom: 200px;
-display: inline-block;
-position: relative;
-text-align: center;
-}
-
-.arrow::before {
-content: '';
-display: block;
-width: 24px;
-height: 24px;
-top: 50%;
-left: 50%;
-border-style: solid;
-border-color: #ffeed4;
-border-width: 2px 2px 0 0;
-position: absolute;
-transform-origin: 50% 50%;
-}
-
-.arrow.left::before { 
-transform: rotate(-135deg);
-margin: -15px 0 0 -10px;
-}
-.arrow.right::before { 
-transform: rotate(45deg); 
-margin: -15px 0 0 -20px;
-}
-
-.arrow::after {
-/* content: ''; */
-display: block;
-top: 50%;
-left: 50%;
-border-style: double;
-border-color: #000;
-position: absolute;
-/* transform-origin: 50% 50%; */
-}
-
-/* .arrow.left::after { 
-width: 40px;
-height: 0;
-border-width: 2px 0 0 0;
-transform: translate(-14px, -1px);
-}
-
-.arrow.right::after { 
-width: 40px;
-height: 0;
-border-width: 2px 0 0 0;
-transform: translate(-26px, -1px);
-} */
-
-.arrow.circle {
-background: #FF0006;
-border-radius: 50px;
-}
-
-.flex_container a {
-  text-align: center;
-}
-
-Footer { 
-margin-top: 40px;
-}
-        
-
-</style>
 
 
 </head>
@@ -166,11 +26,12 @@ margin-top: 40px;
         <div class="sidebar">
             <ul>
                 <li class="sidebar-item"><a href="home.html">Home</a></li>
-                <li class="sidebar-item"><a href="about_page.html">About Us</a></li>
+                <li class="sidebar-item"><a href="visit_us.html">Visit</a></li>
+                <li class="sidebar-item"><a href="about_page.html">About</a></li>
                 <li class="sidebar-item"><a href="label.html">Collection</a></li>
-                <li class="sidebar-item"><a href="exhibits.html">Current Exhibits</a></li>
-                <li class="sidebar-item"><a href="visit_us.html">Visit Us</a></li>
-                <li class="sidebar-item"><a href="support.html">Support Us</a></li>
+                <li class="sidebar-item"><a href="exhibits.html">Exhibits</a></li>
+                <li class="sidebar-item"><a href="support.html">Support</a></li>
+                <li class="sidebar-item"><a href="events.html">Events</a></li>
             </ul>
             <img id="logo" src="images/mushroomlogos-01.png" alt="">
         </div>
@@ -204,7 +65,12 @@ margin-top: 40px;
                 <!-- trying to make the objects circle so 1 -> 2 -> 3 -> 4 -> 1 -->
             </div>
 
-            <img src="images/unknown-1.png" alt="">     
+            <!-- Image -->
+            <div class="ci-item" ci-id="6e135960-95af-11ec-98ee-b754902efcb7">
+                <img class="ci-image"></img>
+            </div>
+ 
+            <!-- <img src="images/unknown-1.png" alt="">      -->
             
             <div class="arrow">
                 <!-- https://codepen.io/cypark/pen/OMWGjy -->
@@ -215,11 +81,20 @@ margin-top: 40px;
 
             <br>
             <br>
-            <h1>Mushrooms (2005)</h1>
+
+            <div class="ci-item" ci-id="6e135960-95af-11ec-98ee-b754902efcb7">
+                <h1 class="ci-title"></h1>
+            </div>
+
+            <!-- <h1>Mushrooms (2005)</h1> -->
             <p>Yayoi Kusama</p>
             <p>Acrylic on canvas</p>
             <br>
-            <p>Yayoi Kusama is a Japanese artist known for her polka dot motifs, her psychedelic compositions are some of the abstract expressionist movement's most recognizable work. Kusama's work is meant to be an immersive experience inviting viewers into her obsessions and repetitions - symbolic of her Obsessive Compulsive Disorder.</p>
+
+            <div class="ci-item" ci-id="6e135960-95af-11ec-98ee-b754902efcb7">
+                <p class="ci-description"></p>
+            </div>
+            <!-- <p>Yayoi Kusama is a Japanese artist known for her polka dot motifs, her psychedelic compositions are some of the abstract expressionist movement's most recognizable work. Kusama's work is meant to be an immersive experience inviting viewers into her obsessions and repetitions - symbolic of her Obsessive Compulsive Disorder.</p> -->
         </div>
     </div>
 

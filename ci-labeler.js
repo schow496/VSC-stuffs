@@ -3,9 +3,11 @@ document.addEventListener('readystatechange', async (event) => {
     let url = `https://api.catalogit.app/api/public/entries/${item.getAttribute('ci-id')}`
     let res = await fetch(url);
     let data = await res.json();
+    console.log("DATA", data)
     try {
       item.querySelector('.ci-title').innerHTML 
       = data.properties.hasName.value_text;
+      console.log("set title")
     } catch (err) {}
     try {
       item.querySelector('.ci-label').innerHTML 
